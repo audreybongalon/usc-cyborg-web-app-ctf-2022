@@ -1,0 +1,114 @@
+/*
+       document : style.css
+     created on : 2022 april 10, 5:08 am (sunday)
+         author : audrey bongalon (bongalon@usc.edu)
+    description : CSS for easy web app CTF (csci430 CTF2)
+
+                                        88
+                                        88
+                                        88
+      ,adPPYYba,  88       88   ,adPPYb,88  8b,dPPYba,   ,adPPYba,  8b       d8
+      ""     `Y8  88       88  a8"    `Y88  88P'   "Y8  a8P,,,,,88  `8b     d8'
+      ,adPPPPP88  88       88  8b      :88  88          8PP"""""""   `8b   d8'
+      88,    ,88  "8a,   ,a88  "8a,   ,d88  88          "8b,   ,aa    `8b,d8'
+      `"8bbdP"Y8   `"YbbdP'Y8   `"8bbdP"Y8  88           `"Ybbd8"'      Y88'
+                                                                        d8'
+                                                                       d8'
+*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #111111;
+
+    /* defaults */
+    font-family: "Share Tech Mono", sans-serif;
+    text-align: justify;
+}
+
+body {
+    margin: 4em 20%;
+}
+
+
+
+
+h1, h2 {
+    font-family: "Major Mono Display", monospace;
+    color: var(--level-colour, #ffc0cb);
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+p, ol, ul {
+    color: #eeeeee;
+}
+
+a {
+    color: var(--level-colour, #ffc0cb);
+}
+
+ul > li {
+    list-style: square;
+    padding-left: 0.5em;    /* space between bullet and text */
+}
+
+li + li {
+    margin-top: 0.5em;
+}
+
+
+
+
+/* because "Major Mono Display" doesnt handle (certain) punctuation well */
+.jank {
+    font-family: "Raleway", sans-serif;
+}
+
+
+
+
+/* hightlighting text (using the mouse to select). also for <code> tags */
+*::selection, code {
+    background-color: #666666;  /* fallback value */
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* stuff i explicitly want to highlight */
+mark {
+    background-color: var(--level-colour, #ffc0cb); /* fallback value */
+    background-color: var(--level-colour-mark, rgba(255, 192, 203, 0.9));
+}
+
+
+
+
+/* place spaces in between each section */
+section + section {
+    margin-top: 4em;
+}
+
+
+
+
+/* for the generic "default" buttons */
+
+button {
+    padding: 1.5em 3em;
+    border-radius: 0.5em;
+
+    font-family: "Major Mono Display", monospace;
+    border: 2px solid var(--level-colour, #ffc0cb);
+
+    color: var(--level-colour, #ffc0cb);    /* text colour */
+    background-color: transparent;          /* button colour */
+    transition: background-color 1s ease;
+}
+
+button:hover {
+    color: #111111;
+    background-color: var(--level-colour-mark, #ffc0cb);;
+}
+

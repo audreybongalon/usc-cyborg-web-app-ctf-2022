@@ -1,0 +1,12 @@
+/*
+       document : level-1.css
+     created on : 2022 april 17, 7:41 am (sunday)
+         author : audrey bongalon (bongalon@usc.edu)
+    description : CSS for easy web app CTF. level 1 is light blue (csci430 CTF2)
+*/
+
+:root {
+    --level-colour: #00ffff;
+    --level-colour-mark: rgba(0, 255, 255, 0.9);
+}
+

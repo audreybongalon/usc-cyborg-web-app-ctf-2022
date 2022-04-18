@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!--
+       document : level-0.html
+     created on : 2022 april 10, 4:53 am (sunday)
+         author : audrey bongalon (bongalon@usc.edu)
+    description : intro for the easy web app CTF (USC miniCTF 2022)
+
+                               ___
+                              /\  \
+      ______    ___  ___      \_\  \    ______    ______   ___  ___
+     /  __  \  /\  \/\  \    /  __  \  /\   __\  /  __  \ /\  \/\  \
+    /\  \L\  \ \ \  \_\  \  /\  \L\  \ \ \  \_/ /\   ___/ \ \  \_\  \
+    \ \___/\__\ \ \___/\__\ \ \___/\__\ \ \__\  \ \_____\  \ \____   \
+     \/__/\/__/  \/___/\__/  \/___/\__/  \/__/   \/_____/   \/___/_\  \
+                                                               /\_____/
+                                                               \/____/
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>web app level 0 - intro</title>
+
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+        <link href="level-0.css" rel="stylesheet">
+        <link href="../style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--
+            hey. did you come back here (from part a) to see if there was anything in the HTML source code? nice job!
+            digging around is what hacking is all about!
+
+            unfortunately, this hidden message is all you'll get as a reward. no bonus flag or anything. sorry, but i
+            promised that for level 0, i'll just give you the flag and that you can skip to the end, so it'd be unfair
+            for me to make others lose out on points for doing exactly what i told them they could
+        -->
+
+        <section>
+            <h1>web application hacking</h1>
+            <p><i>an intro-level CTF</i></p>
+        </section>
+
+        <section>
+            <h2>overview</h2>
+
+            <p>welcome to the web application portion of the CTF!</p>
+
+            <p>this CTF is geared towards total beginners, so i'll try to keep these challenges as simple as
+            possible. web application hacking is such a wide topic that we cant possibly cover everything, but by the
+            end of this, you should feel familiar with the basics</p>
+
+            <p>in this portion, we'll cover the basics of HTML, CSS, and javascript, as well as what tools you can use
+            for hacking those. your target today will be a very simple web app. in fact, it'll be a bit more simple than
+            most modern web apps, but it's meant to keep things relatively easy</p>
+        </section>
+
+        <section>
+            <h2>level 0</h2>
+
+            <p>this level should be really easy. <mark>on the last page of this level, i will literally just give you
+            the flag for free</mark>. but i'll also provide some material for you to read over, which will hopefully
+            help with the later levels. if you want, you can just skip to the last page and grab your flag, and then
+            just come back here if you need it</p>
+        </section>
+
+        <section>
+            <h2>what<span class="jank">'</span>s a web app<span class="jank">?</span></h2>
+
+            <p>tldr: basically a website</p>
+
+            <p>the longer answer is... well... okay so you know what an app is, right? those things on your laptop,
+            phone, tablet, etc? just imagine something like that, except you dont have to install it on your device.
+            instead, your browser downloads the files, and then it somehow magically works</p>
+
+            <p>you can read stuff, you can click stuff to do a thing, and maybe pressing stuff on your keyboard does
+            another thing. woo! so many wonderful possibilities! and you never had to install anything (other than your
+            browser), hence why web apps are everywhere! that also means hacking opportunities are everywhere too</p>
+
+            <p>if you try to google the phrase "web app", you'll probably see something about it having to be
+            "interactive" and whatnot. in practice though, pretty much every modern website has some level of
+            interactivity. there's some other technical differences too, but IMO it's not a big deal</p>
+        </section>
+
+        <section>
+            <h2>how to use a web app</h2>
+
+            <p>just go to the website with your browser. you know, chrome, firefox, safari, microsoft edge (lol why),
+            internet explorer, etc</p>
+
+            <p>from there, it all depends on the app. you probably click things, and maybe type things too</p>
+        </section>
+
+        <section>
+            <h2>okay, but how does all of that work<span class="jank">?</span></h2>
+
+            <p>first, you need to understand that there's usually a client and a server. the client is usually a browser
+            on a laptop or phone, and the server is usually some company's computer whose sole purpose is to give
+            clients files when they ask. in practice, there's usually multiple clients and multiple servers, but we'll
+            ignore that for now</p>
+
+            <p>when you (the client, i.e. your browser) visited the webpage, your browser downloaded a file (probably an
+            HTML file). usually, that file contains links to other files (fonts, images, scripts, etc), and your browser
+            automatically downloads those too. your browser renders all the content, and then executes the scripts. your
+            browser now does stuff!</p>
+
+            <p>additionally, your browser might detect you doing certain actions, and send information to the server
+            when that happens. the server might respond by sending back more data, and your browser can do more stuff
+            based on that data. for example, your browser might detect when you hit the "submit" button on a form, send
+            the data to the server, and then the server will send back a different message based on what information you
+            entered into the form</p>
+
+            <p>if all of this seems pretty vague, that's because it is. web apps have so many possibilities in what they
+            can do. but the important thing to remember is that <mark>some of the stuff happens in your browser, and
+            some of the stuff happens on the server</mark>. why is that important? it means you have two environments to
+            learn to deal with!</p>
+
+            <p>for this CTF, we'll focus on hacking stuff on the <i>client</i> side. as far as the server goes, it will
+            just return whatever files the client asks for. so for the web app portion of this CTF, <mark>attacking the
+            server will be considered out of scope</mark>. (That means don't hack it.)</p>
+        </section>
+
+        <section>
+            <h2>a brief history of the web</h2>
+
+            <p>personally, i think the best way to understand why web apps work the way they do is by seeing how the web
+            evolved over time. so let's go back in history...</p>
+            <br>
+
+            <p><i>click the button below to go back in time</i></p>
+            <a href="level-0a.html"><button class="rainbow-background">
+                <span>whoooooooooosh<span class="jank">!!!</span></span>
+            </button></a>
+        </section>
+    </body>
+</html>
+

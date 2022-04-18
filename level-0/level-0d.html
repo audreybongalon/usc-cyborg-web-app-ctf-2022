@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+       document : level-0d.html
+     created on : 2022 april 17, 6:47 am (sunday)
+         author : audrey bongalon (bongalon@usc.edu)
+    description : intro for easy web app CTF. level 0 flag (USC miniCTF 2022)
+
+                               ___
+                              /\  \
+      ______    ___  ___      \_\  \    ______    ______   ___  ___
+     /  __  \  /\  \/\  \    /  __  \  /\   __\  /  __  \ /\  \/\  \
+    /\  \L\  \ \ \  \_\  \  /\  \L\  \ \ \  \_/ /\   ___/ \ \  \_\  \
+    \ \___/\__\ \ \___/\__\ \ \___/\__\ \ \__\  \ \_____\  \ \____   \
+     \/__/\/__/  \/___/\__/  \/___/\__/  \/__/   \/_____/   \/___/_\  \
+                                                               /\_____/
+                                                               \/____/
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>web app level 0 - flag</title>
+
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+        <link href="level-0.css" rel="stylesheet">
+        <link href="../style.css" rel="stylesheet">
+    </head>
+    <body>
+        <section>
+            <h1>level 0 complete</h1>
+            <p><i>level 0, part d</i></p>
+        </section>
+
+        <section>
+            <h2>use your knowledge</h2>
+
+            <p>hopefully you learnt a lot. or, well, maybe you already knew all that and, you know, just skipped all the
+            way to here to get your flag</p>
+
+            <p>either way, learning is good, but what's the point if you dont use it? go test out your skills! there's
+            three other levels waiting for you!</p>
+        </section>
+
+        <section>
+            <h2>your flag, as promised</h2>
+
+            <button id="flag-button">copy flag</button>
+
+            <p>click the button to copy it to your clipboard</p>
+
+            <br>
+            <p><sub><i>side note: how do you think that button works? (there's no bonus flag. just something to think
+            about)</i></sub></p>
+        </section>
+
+
+        <section>
+            <h2>more levels</h2>
+
+            <p>there's three other levels. you can access them from the index page</p>
+
+            <p>good luck, and happy hunting</p>
+            <br>
+
+            <p><i>click the button below to return to the index</i></p>
+            <a href="../index.html"><button>index</button></a>
+        </section>
+
+        <script>
+            // copy flag to clipboard when you click the button
+            document.getElementById("flag-button").addEventListener("click", () => {
+                navigator.clipboard.writeText("CybOrg{lol_n00b}");
+            });
+        </script>
+    </body>
+</html>
+

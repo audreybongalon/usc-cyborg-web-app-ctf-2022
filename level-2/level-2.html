@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+       document : level-2.html
+     created on : 2022 april 17, 12:06 pm (sunday)
+         author : audrey bongalon (bongalon@usc.edu)
+    description : easy web app CTF level. game hacking (USC miniCTF 2022)
+                  game code is based on my work from high school
+
+                               ___
+                              /\  \
+      ______    ___  ___      \_\  \    ______    ______   ___  ___
+     /  __  \  /\  \/\  \    /  __  \  /\   __\  /  __  \ /\  \/\  \
+    /\  \L\  \ \ \  \_\  \  /\  \L\  \ \ \  \_/ /\   ___/ \ \  \_\  \
+    \ \___/\__\ \ \___/\__\ \ \___/\__\ \ \__\  \ \_____\  \ \____   \
+     \/__/\/__/  \/___/\__/  \/___/\__/  \/__/   \/_____/   \/___/_\  \
+                                                               /\_____/
+                                                               \/____/
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>web app level 2 - medium</title>
+
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+        <link href="level-2.css" rel="stylesheet">
+        <link href="../style.css" rel="stylesheet">
+    </head>
+    <body>
+        <section>
+            <h1>medium</h1>
+            <p><i>level 2 - game hacking</i></p>
+        </section>
+
+        <section>
+            <h2>hack a video game</h2>
+
+            <p>this is meant to teach you how to hack javascript</p>
+
+            <p>depending on what you choose to do, this could be extremely easy but boring, or slightly easy yet fun</p>
+
+            <p>there's a game below. your goal is to win by shooting the other ship down. arrow keys to move, spacebar
+            to shoot.</p>
+
+            <p>but there's one problem: the game is really hard. perhaps a bit too hard. maybe even impossible</p>
+
+            <p>so let's hack it!</p>
+
+            <p>the obvious thing to do would be to insta-kill the enemy ship, but that's kinda boring. what other things
+            could we do? make our own ship invincible? make our shots do extra damage? increase our cannon's fire rate?
+            make the enemy frozen in place? disable the enemy's ability to fire? you decide!</p>
+
+            <p>there's just one thing you need to promise: do not look inside <code>flag.js</code>. we put the script to
+            display the flag there so that we didn't need to set up an API server. the downside is that you can just
+            read the flag straight from the file. if you do that, you'll still get the flag, but come on. that ruins the
+            experience. there's also some sections of code that will tell you that certain things are not allowed.
+            please obey those rules (for the same reason). if you dont' you're not learning much that way. plus, this
+            challenge is already meant to be easy anyways. so be a good noodle!</p>
+        </section>
+
+        <section>
+            <!-- images must be preloaded by the page -->
+            <div style="display: none;">
+                <img src="galaga-spaceship.png"         alt="spaceship" id="spaceship">
+                <img src="galaga-spaceship-damaged.png" alt="ouch"      id="spaceship-damaged">
+                <img src="red-bullet.png"               alt="pew"       id="red-bullet">
+
+                <img src="galaga-enemy.png"             alt="rawr"      id="enemy">
+                <img src="galaga-enemy-damaged.png"     alt="owwie"     id="enemy-damaged">
+                <img src="galaga-explosion-1.png"       alt="boom"      id="explosion1">
+                <img src="galaga-explosion-2.png"       alt="BOOM"      id="explosion2">
+                <img src="green-bullet.png"             alt="pew"       id="green-bullet">
+            </div>
+
+            <canvas id="game-canvas" width="400" height="410">if you're seeing this message, you're either reading the
+            source code, or your browser is incapable of running canvas</canvas>
+        </section>
+
+        <section>
+            <h2>more levels</h2>
+
+            <p>the other levels can be accessed from the index page</p>
+            <br>
+
+            <p><i>click the button below to return to the index</i></p>
+            <a href="../index.html"><button>index</button></a>
+        </section>
+
+        <script src="flag.js"></script>
+        <script src="space-game.js"></script>
+    </body>
+
+    <!-- looking at the source code, are you? nice job! here's a flag: CybOrg{straight_from_the_source} -->
+</html>
+

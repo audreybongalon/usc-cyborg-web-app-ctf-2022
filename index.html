@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+       document : index.html
+     created on : 2022 april 17, 6:13 am (sunday)
+         author : audrey bongalon (bongalon@usc.edu)
+    description : index for the easy web app CTF (USC miniCTF 2022)
+
+                               ___
+                              /\  \
+      ______    ___  ___      \_\  \    ______    ______   ___  ___
+     /  __  \  /\  \/\  \    /  __  \  /\   __\  /  __  \ /\  \/\  \
+    /\  \L\  \ \ \  \_\  \  /\  \L\  \ \ \  \_/ /\   ___/ \ \  \_\  \
+    \ \___/\__\ \ \___/\__\ \ \___/\__\ \ \__\  \ \_____\  \ \____   \
+     \/__/\/__/  \/___/\__/  \/___/\__/  \/__/   \/_____/   \/___/_\  \
+                                                               /\_____/
+                                                               \/____/
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>web app hax</title>
+
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+        <link href="level-0/level-0.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+
+        <!-- will override the external styles -->
+        <style>
+            html, body {
+                /* for vertical centering */
+                height: 100%;
+            }
+
+            body {
+                /* override the external sheet*/
+                margin-top: 0;
+                margin-bottom: 0;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            #button-container {
+                display: flex;
+                justify-content: center;
+                column-gap: 3em;
+            }
+        </style>
+    </head>
+    <body><div>     <!-- wrapper div is just so we can vertically align with CSS -->
+        <section>
+            <h1>web application hacking</h1>
+            <p><i>an intro-level CTF</i></p>
+        </section>
+
+        <section>
+            <h2>levels</h2>
+
+            <p>there's are 3 levels, plus an introduction section (level 0)</p>
+            <br>
+
+            <div id="button-container">
+                <a href="level-0/level-0.html"><button>level 0</button></a>
+                <a href="level-1/level-1.html"><button>level 1</button></a>
+                <a href="level-2/level-2.html"><button>level 2</button></a>
+                <a href="level-3/level-3.html"><button>level 3</button></a>
+            </div>
+        </section>
+    </div></body>
+</html>
+

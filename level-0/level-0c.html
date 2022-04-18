@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--
+       document : level-0c.html
+     created on : 2022 april 17, 4:00 am (sunday)
+         author : audrey bongalon (bongalon@usc.edu)
+    description : intro for easy web app CTF. teaching js (USC miniCTF 2022)
+
+                               ___
+                              /\  \
+      ______    ___  ___      \_\  \    ______    ______   ___  ___
+     /  __  \  /\  \/\  \    /  __  \  /\   __\  /  __  \ /\  \/\  \
+    /\  \L\  \ \ \  \_\  \  /\  \L\  \ \ \  \_/ /\   ___/ \ \  \_\  \
+    \ \___/\__\ \ \___/\__\ \ \___/\__\ \ \__\  \ \_____\  \ \____   \
+     \/__/\/__/  \/___/\__/  \/___/\__/  \/__/   \/_____/   \/___/_\  \
+                                                               /\_____/
+                                                               \/____/
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>web app level 0 - javascript</title>
+
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+        <link href="level-0.css" rel="stylesheet">
+        <link href="../style.css" rel="stylesheet">
+    </head>
+    <body>
+        <section>
+            <h1>javascript</h1>
+            <p><i>level 0, part c</i></p>
+        </section>
+
+        <section>
+            <h2>because the world needed more interactivity</h2>
+
+            <p><span style="text-decoration: line-through">according to wikipedia,</span> javascript was actually
+            created a year before CSS, so we actually jumped back through time. unlike HTML or CSS, javascript is a
+            full-on programming language. without actually learning all three of these languages, it's hard to explain
+            how different they really are</p>
+
+            <p>here's some things you can do with javascript:</p>
+
+            <ul>
+                <li>detect where your mouse is</li>
+                <li>detect when and where you click on a page</li>
+                <li>detect keyboard input</li>
+                <li>perform an action when you click/type on the page</li>
+                <li>modify HTML or CSS content. this includes adding/changing/removing content or how it looks</li>
+                <li>redirect you to a new page</li>
+                <li>add, modify, and delete cookies</li>
+                <li>make web requests to servers, and do stuff with the responses</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>example</h2>
+
+            <p>the javascript on this page will track your mouse clicks and keystrokes. it'll tell you the coordinates
+            of the last place on the page you clicked, the last key you pressed, and it'll change the background colour
+            every time you click or type.</p>
+
+            <div id="demo-div">
+                <p>your mouse is at: (x=<span id="mouse-x">n/a</span>, y=<span id="mouse-y">n/a</span>)</p>
+                <p>you last clicked: (x=<span id="click-x">n/a</span>, y=<span id="click-y">n/a</span>)</p>
+                <p>you last pressed: [<span id="key-pressed">n/a</span>]</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>what you need to know (as a hacker)</h2>
+
+            <p>don't call it "java". java is a different programming language</p>
+
+            <p>javascript has a lot of capabilities. it's hard to explain how to hack javascript without just saying
+            "learn how to code". but if you can at least learn some of the basics, it can definitely help a lot. if you
+            can, look up what a "variable" is keep in mind that variables exist in pretty much every programming
+            language; make sure your research is about javascript!</p>
+
+            <p>javascript can be found inside <code>&lt;script&gt;</code> tags. often (but not always), the tags will point to
+            an external file that ends with <code>.js</code>. it can be helpful to read those files!</p>
+
+            <p>is there an easy way to read and modify the javascript variables on the page? hmm...<br>
+            <i>(if you cant figure it out, ask some people around you if they know)</i></p>
+        </section>
+
+        <section>
+            <!-- lowercase in the heading, due to the font -->
+            <h2>thank you for coming to my ted talk</h2>
+
+            <p>alright. that's enough of me talking. let's get hacking!</p>
+
+            <p>let's get back to the present day so we can start hunting for flags!</p>
+            <br>
+
+            <p><i>click the button below to back to the present</i></p>
+            <a href="level-0d.html"><button class="rainbow-background">
+                <span>whoooooooooosh<span class="jank">!!!</span></span>
+            </button></a>
+        </section>
+
+        <script src="demo.js"></script>
+    </body>
+</html>
+

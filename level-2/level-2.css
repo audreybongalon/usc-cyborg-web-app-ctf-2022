@@ -1,0 +1,26 @@
+/*
+       document : level-2.css
+     created on : 2022 april 17, 12:55 pm (sunday)
+         author : audrey bongalon (bongalon@usc.edu)
+    description : CSS for easy web app CTF. level 2 is red (csci430 CTF2)
+*/
+
+:root {
+    --level-colour: #ff0000;
+    --level-colour-mark: rgba(255, 0, 0, 0.9);
+}
+
+
+
+
+canvas {
+    border: 1px solid #a1a1a1;
+    border-radius: 0.5em;
+
+    background-color: rgba(255, 255, 255, 0.75);
+    background-image: url("stars-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+

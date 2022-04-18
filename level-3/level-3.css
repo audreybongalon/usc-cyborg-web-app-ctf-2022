@@ -1,0 +1,12 @@
+/*
+       document : level-3.css
+     created on : 2022 april 17, 5:02 pm (sunday)
+         author : audrey bongalon (bongalon@usc.edu)
+    description : CSS for easy web app CTF. level 3 is green (csci430 CTF2)
+*/
+
+:root {
+    --level-colour: #00ff00;
+    --level-colour-mark: rgba(0, 255, 0, 0.9);
+}
+

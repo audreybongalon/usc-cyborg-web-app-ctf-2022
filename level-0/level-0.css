@@ -1,0 +1,56 @@
+/*
+       document : level-0.css
+     created on : 2022 april 17, 1:59 am (sunday)
+         author : audrey bongalon (bongalon@usc.edu)
+    description : CSS for easy web app CTF. level 0 is pink (csci430 CTF2)
+
+                                        88
+                                        88
+                                        88
+      ,adPPYYba,  88       88   ,adPPYb,88  8b,dPPYba,   ,adPPYba,  8b       d8
+      ""     `Y8  88       88  a8"    `Y88  88P'   "Y8  a8P,,,,,88  `8b     d8'
+      ,adPPPPP88  88       88  8b      :88  88          8PP"""""""   `8b   d8'
+      88,    ,88  "8a,   ,a88  "8a,   ,d88  88          "8b,   ,aa    `8b,d8'
+      `"8bbdP"Y8   `"YbbdP'Y8   `"8bbdP"Y8  88           `"Ybbd8"'      Y88'
+                                                                        d8'
+                                                                       d8'
+*/
+
+:root {
+    --level-colour: #ffc0cb;
+    --level-colour-mark: rgba(255, 192, 203, 0.9);
+}
+
+
+
+
+/* for the whoosh buttons */
+
+@keyframes rainbow-animation {
+    to { background-position:0 -200% }
+}
+
+.rainbow-background {   /* <button> */
+    background-image: repeating-linear-gradient(
+            #ff0000             0%,         #ff8000 calc(      100%/12) ,   #ffff00 calc( 2 * (100%/12)),
+            #80ff00 calc(3 * (100%/12)),    #00ff00 calc( 4 * (100%/12)),   #00ff80 calc( 5 * (100%/12)),
+            #00ffff calc(6 * (100%/12)),    #0080ff calc( 7 * (100%/12)),   #0000ff calc( 8 * (100%/12)),
+            #8000ff calc(9 * (100%/12)),    #ff00ff calc(10 * (100%/12)),   #ff0080 calc(11 * (100%/12)),
+            #ff0000           100%
+    );
+
+    background-position: 0 0;
+    background-size: 100% 200%;
+    animation: rainbow-animation 3s linear infinite;
+
+    border: none;   /* override the "default" button */
+}
+
+button > span {     /* text inside the button */
+    font-family: "Major Mono Display", monospace;
+    font-size: x-large;
+    font-weight: bolder;
+    color: #ffffff;
+    filter: drop-shadow(2px 2px 2px #000000);
+}
+

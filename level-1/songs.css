@@ -1,0 +1,181 @@
+/*
+       document : style.css
+     created on : 2022 april 17, 11:18 am (sunday)
+         author : audrey bongalon (bongalon@usc.edu)
+    description : easy web app CTF. CSS for songs on level 1 (csci430 CTF2)
+
+                                        88
+                                        88
+                                        88
+      ,adPPYYba,  88       88   ,adPPYb,88  8b,dPPYba,   ,adPPYba,  8b       d8
+      ""     `Y8  88       88  a8"    `Y88  88P'   "Y8  a8P,,,,,88  `8b     d8'
+      ,adPPPPP88  88       88  8b      :88  88          8PP"""""""   `8b   d8'
+      88,    ,88  "8a,   ,a88  "8a,   ,d88  88          "8b,   ,aa    `8b,d8'
+      `"8bbdP"Y8   `"YbbdP'Y8   `"8bbdP"Y8  88           `"Ybbd8"'      Y88'
+                                                                        d8'
+                                                                       d8'
+*/
+
+
+/*
+    hey! so i wanted to test your knowledge of CSS
+
+    unfortunately, there's not a whole lot i can do with "CSS hacking", so
+    instead, we have an activity! there's a bunch of styles on this page, and a
+    bunch of flags. only one of the flags is real though. you need to find the
+    right one
+
+    DO NOT just try all of the flags, since that'll just ruin the experience.
+    the purpose is to make sure you learn CSS
+
+    i'll give you some clues to find the right flag. first, one of the songs is
+    not like the others. find out which one it is. once you know which song it
+    is, find out which style below is giving it its colour. the comment next to
+    that line is the correct flag
+
+    you might need to look up how CSS selectors work for this challenge
+*/
+
+
+
+
+.red {
+    color: #ff3333;     /* CybOrg{css_00} */
+}
+
+.ned {
+    color: #ff3333;     /* CybOrg{css_01} */
+}
+
+.red + .red {
+    color: #ff333380;   /* CybOrg{css_02} */
+}
+
+.yellow {
+    color: #ffff33;     /* CybOrg{css_03} */
+}
+
+#yellow {
+    color: #ffff33;     /* CybOrg{css_04} */
+}
+
+.yellow + .yellow {
+    color: #ffff33;     /* CybOrg{css_05} */
+}
+
+#yellow + .yellow {
+    color: #ffff33;     /* CybOrg{css_06} */
+}
+
+.gold {
+    color: #ffd700;     /* CybOrg{css_07} */
+}
+
+li gold {
+    color: #ffd700;     /* CybOrg{css_08} */
+}
+
+ol > li.gold {
+    color: #ffd700;     /* CybOrg{css_09} */
+}
+
+ol > li gold {
+    color: #ffd700;     /* CybOrg{css_10} */
+}
+
+ul > li.gold {
+    color: #ffd700;     /* CybOrg{css_11} */
+}
+
+#gold {
+    color: #ffd700;     /* CybOrg{css_12} */
+}
+
+.green {
+    color: #33ff33;     /* CybOrg{css_13} */
+}
+
+.blue {
+    color: #3333ff;     /* CybOrg{css_14} */
+}
+
+.another-blue {
+    color: #00ffff;     /* CybOrg{css_15} */
+}
+
+.blue + #blue {
+    color: #3333ff;     /* CybOrg{css_16} */
+}
+
+li.blue {
+    color: #3333ff;     /* CybOrg{css_17} */
+}
+
+.purple {
+    color: #9933ff;     /* CybOrg{css_18} */
+}
+
+#purple {
+    color: #9933ff;     /* CybOrg{css_19} */
+}
+
+li.purple {
+    color: #9933ff;     /* CybOrg{css_20} */
+}
+
+.brown {
+    color: #ff990080;   /* CybOrg{css_21} */
+}
+
+.bnown {
+    color: #ff990080;   /* CybOrg{css_22} */
+}
+
+.b1ack {
+    color: #000000;     /* CybOrg{css_23} */
+    background-color: #666666;
+}
+
+#black {
+    color: #000000;     /* CybOrg{css_24} */
+    background-color: #666666;
+}
+
+.black {
+    color: #000000;     /* CybOrg{css_25} */
+    background-color: #444444;
+}
+
+li.black + .black {
+    color: #000000;     /* CybOrg{css_26} */
+    background-color: #444444;
+}
+
+li:nth-child(30) .black {
+    color: #000000;     /* CybOrg{css_27} */
+}
+
+.white {
+    color: #ffffff;     /* CybOrg{css_28} */
+}
+
+#white {
+    color: #ffffff;     /* CybOrg{css_29} */
+}
+
+span .white {
+    color: #ffffff;     /* CybOrg{css_30} */
+}
+
+.pink {
+    color: #ffc0cb;     /* CybOrg{css_31} */
+}
+
+ol li.pink {
+    color: #ffc0cb;     /* CybOrg{css_32} */
+}
+
+#pink {
+    color: #ffc0cb;     /* CybOrg{css_33} */
+}
+

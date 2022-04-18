@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+       document : level-3.html
+     created on : 2022 april 17, 4:14 pm (sunday)
+         author : audrey bongalon (bongalon@usc.edu)
+    description : easy web app CTF level. basic javascript (USC miniCTF 2022)
+
+                               ___
+                              /\  \
+      ______    ___  ___      \_\  \    ______    ______   ___  ___
+     /  __  \  /\  \/\  \    /  __  \  /\   __\  /  __  \ /\  \/\  \
+    /\  \L\  \ \ \  \_\  \  /\  \L\  \ \ \  \_/ /\   ___/ \ \  \_\  \
+    \ \___/\__\ \ \___/\__\ \ \___/\__\ \ \__\  \ \_____\  \ \____   \
+     \/__/\/__/  \/___/\__/  \/___/\__/  \/__/   \/_____/   \/___/_\  \
+                                                               /\_____/
+                                                               \/____/
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>web app level 3 - medium</title>
+
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+        <link href="level-3.css" rel="stylesheet">
+        <link href="../style.css" rel="stylesheet">
+    </head>
+    <body>
+        <section>
+            <h1>medium</h1>
+            <p><i>level 3 - password cracking with javascript</i></p>
+        </section>
+
+        <section>
+            <h2>learn to code<span class="jank">!</span></h2>
+
+            <p>let's learn to do write javascript! we're not gonna do anything too fancy, so i think a simple password
+            cracking exercise should be good.</p>
+
+            <p>do you normally do password cracking with javascript? no. but is this a simple thing you can
+            realistically learn within a few minutes? absolutely!</p>
+        </section>
+
+        <section>
+            <h2>the exercise</h2>
+
+            <p>on this page, there is a javascript file called <code>flag.js</code>, but you are <b>NOT</b> allowed to
+            read it. otherwise, the challenge is too easy.</p>
+
+            <p>you will only be told the following information about the file:</p>
+
+            <ol>
+                <li>there are two flags you need to crack</li>
+
+                <li>there are two variables called <code>hash1</code> and <code>hash2</code>. each one contains a string
+                representation of the MD5 hash of one of the flags</li>
+
+                <li>there is also a function called <code>md5()</code>, which takes a string as input and outputs the
+                MD5 hash of that string.</li>
+
+                <li>both flags are in the format <code>CybOrg{pw_cracking_xxxx}</code>, where each <code>x</code> is a
+                numeric digit</li>
+
+                <li>see if you can crack the flags with javascript!</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>more levels</h2>
+
+            <p>the other levels can be accessed from the index page</p>
+            <br>
+
+            <p><i>click the button below to return to the index</i></p>
+            <a href="../index.html"><button>index</button></a>
+        </section>
+
+        <script src="flag.js"></script>
+    </body>
+
+    <!-- looking at the source code, are you? nice job! here's a flag: CybOrg{straight_from_the_source} -->
+</html>
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+       document : level-0b.html
+     created on : 2022 april 16, 11:50 pm (saturday)
+         author : audrey bongalon (bongalon@usc.edu)
+    description : intro for easy web app CTF. teaching css (USC miniCTF 2022)
+
+                               ___
+                              /\  \
+      ______    ___  ___      \_\  \    ______    ______   ___  ___
+     /  __  \  /\  \/\  \    /  __  \  /\   __\  /  __  \ /\  \/\  \
+    /\  \L\  \ \ \  \_\  \  /\  \L\  \ \ \  \_/ /\   ___/ \ \  \_\  \
+    \ \___/\__\ \ \___/\__\ \ \___/\__\ \ \__\  \ \_____\  \ \____   \
+     \/__/\/__/  \/___/\__/  \/___/\__/  \/__/   \/_____/   \/___/_\  \
+                                                               /\_____/
+                                                               \/____/
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>web app level 0 - css</title>
+
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+        <link href="level-0.css" rel="stylesheet">
+        <link href="../style.css" rel="stylesheet">
+    </head>
+    <body>
+        <section>
+            <h1>css</h1>
+            <p><i>level 0, part b</i></p>
+        </section>
+
+        <section>
+            <h2>because the world needed some style</h2>
+
+            <p>fast forward about half a decade, and CSS came along. it didn't instantly fix everything, but it sure
+            made things a lot prettier... well, more like <i>capable</i> of being prettier. you still need someone who
+            knows good graphic design</p>
+        </section>
+
+        <section>
+            <h2>what you need to know (as a hacker)</h2>
+
+            <p>CSS adds style.</p>
+
+            <p>if im gonna be real with you, that's about it. for the most part, you won't be doing a lot with CSS when
+            it comes to web app hacking. if you do, it's probably social-engineering related, and most of the time it's
+            just making something hidden from view</p>
+        </section>
+
+        <section>
+            <!-- lowercase in the heading, due to the font -->
+            <h2>more about css</h2>
+
+            <ul>
+                <li>CSS can be written in an external file, inside a <code>&lt;script&gt;</code> tag, or "inline" on
+                a tag itself</li>
+
+                <li>there can be multiple CSS files per page</li>
+
+                <li>multiple HTML files can reference the same CSS page. in fact, that's how all of these levels
+                maintain a consistent style between them</li>
+
+                <li>CSS can be used to "hide" information from the user. the information can still be found if you read
+                the source code though. there's various ways to do this: <code>display: none</code>, <code>visibility:
+                hidden</code>, <code>opacity: 0</code>, or even setting the text colour to the same as the background
+                colour</li>
+
+                <li>modern CSS can do animations too. some are simple, like changing colour when you hover over a
+                button. some are slightly more complicated, like the rainbow button used to progress through these
+                levels</li>
+
+                <li>modern CSS also has variables and can do certain kinds of mathematical calculations. if you really
+                want to, you can use this to do code obfuscation, but this has limited effectiveness</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>but wait, there<span class="jank">'</span>s moar<span class="jank">!</span></h2>
+
+            <p>for most websites, just HTML and CSS is actually fine, since most websites are primarily just text and
+            images. but if you want more user interaction, we need something more...</p>
+            <br>
+
+            <p><i>click the button below to jump through time</i></p>
+            <a href="level-0c.html"><button class="rainbow-background">
+                <span>whoooooooooosh<span class="jank">!!!</span></span>
+            </button></a>
+        </section>
+    </body>
+</html>
+

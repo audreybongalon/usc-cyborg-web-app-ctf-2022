@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<!--
+       document : level-0a.html
+     created on : 2022 april 16, 8:48 pm (saturday)
+         author : audrey bongalon (bongalon@usc.edu)
+    description : intro for easy web app CTF. teaching html (USC miniCTF 2022)
+
+                               ___
+                              /\  \
+      ______    ___  ___      \_\  \    ______    ______   ___  ___
+     /  __  \  /\  \/\  \    /  __  \  /\   __\  /  __  \ /\  \/\  \
+    /\  \L\  \ \ \  \_\  \  /\  \L\  \ \ \  \_/ /\   ___/ \ \  \_\  \
+    \ \___/\__\ \ \___/\__\ \ \___/\__\ \ \__\  \ \_____\  \ \____   \
+     \/__/\/__/  \/___/\__/  \/___/\__/  \/__/   \/_____/   \/___/_\  \
+                                                               /\_____/
+                                                               \/____/
+-->
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>web app level 0 - html</title>
+
+        <!--
+            there's actually a little bit of CSS here. you can technically do it with just HTML, but it's an outdated
+            syntax. im sure that browsers still support it, but it was just easier to use CSS
+        -->
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+
+            td {
+                padding: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <h1>HTML</h1>
+            <p><i>level 0, part a</i></p>
+            <p>No, this page isn't broken. It's supposed to look like this.</p>
+        </section>
+
+        <section>
+            <h2>Welcome to the web!</h2>
+
+            <p>It's the early 90s. Some people just came up with a wonderful idea: the internet! In its earliest stages,
+            the internet was mainly used in research, academia, and the military. So at this point in time, the focus
+            was on sharing documents and manuals, not dank memes, cat photos, or social media posts.</p>
+
+            <p>Of course, if we're gonna have a bunch of computers from around the world sharing data, we're gonna need
+            those computers to agree on how to communicate that data. And thus, HTML was born. HTML specifies what
+            "content" goes on the page. You might notice that everything looks kinda ugly. In fact, you might feel like
+            this page looks "broken", or maybe like some kind of sussy scam website. That's because nowadays (2022), not
+            many people write websites with <i>just</i> HTML anymore.</p>
+
+            <p>The basic format of HTML is to place content inside "tags", which look like this:<br>
+                <code>&lt;p&gt;example of a paragraph&lt;/p&gt;</code><br>
+            I'm not going to go into detail, but you can Google more about it if you want.</p>
+        </section>
+
+        <section>
+            <h2>What you need to know (as a hacker)</h2>
+
+            <ol>
+                <li>HTML can have links. See the section below for more details.</li>
+
+                <li>HTML is "static", meaning whatever you see on the page doesn't change...</li>
+
+                <li>...unless something else modifies the HTML. But the thing making the changes isn't the HTML; it's
+                something else</li>
+
+                <li>Your browser automatically renders the HTML page for you. This means that what you see here is not
+                the same as the "source code" that the developer wrote. Try to figure out how to view the source code
+                for this page. Can you find the secret message?</li>
+
+                <li>On modern web apps, some of the HTML may not necessarily be written by a human. For example, imagine
+                a page that says "welcome [username]" after you log in, where "[username]" is replaced with a different
+                name for each user. A modern server can send different HTML content based on stuff like the user, time
+                of day, what pages you visited before, etc.</li>
+            </ol>
+
+            <!--
+                yay! you found the secret message!
+
+                in case you dont already know, this is an HTML comment. stuff in comments can only be seen in the source
+                code, but the browser will not render it to the user. you're able to view the source code because your
+                browser had to download this entire file to be able to render the page in the first place
+
+                now you might be thinking, "hold on. i literally just press [Ctrl + U] on my keyboard and read? that's
+                it? this doesnt feel like *real* hacking. real websites dont have secret messages"
+
+                okay, so a real website probably doesnt have a secret message, but there have been some cases where
+                people have found sensitive data in the raw HTML. you usually wont be able to hack something this easily
+                irl, but it *does* happen every now and then. this isnt a testament to how easy hacking is, so much as
+                it is to how some developers know nothing about security
+
+                take a look at these:
+                https://arstechnica.com/tech-policy/2021/10/viewing-website-html-code-is-not-illegal-or-hacking-prof-tells-missouri-gov/
+                https://threatpost.com/missouri-prosecute-hacker-data-leak/175501/
+
+                irl, you wont usually find a full-on list of SSNs, but it's not uncommon find notes that developers
+                leave for themselves. usually this just explains what the code does, but occasionally you might find
+                API keys or "todo" notes about bugs they havent fixed yet
+            -->
+
+            <p>In real life, you don't often "hack" HTML. But the HTML might link to other files that will help you hack
+            the web app. Use your browser to check for linked files!</p>
+        </section>
+
+        <section>
+            <h2>Modifying HTML</h2>
+
+            <p>Your browser needs to download the entire HTML file so that it can actually display that information onto
+            the screen. Did you know that the file is kept in your browser's memory? You can even modify the contents
+            to make it look like the page says something else! Keep in mind that this only modifies the file that
+            <i>you</i> downloaded. Anyone else who visits the page won't see those modifications, since they get a
+            separate copy from the server. Also, your changes will probably go away once you refresh the page.</p>
+
+            <p>Still, it's possible to pull off some kind of social-engineering scheme this way. For example, there are
+            some real-life scammers who trick their victims by "hacking" their bank account by modifying the HTML. You
+            can see an example <a href="https://youtu.be/HSMPRAn3bjE?t=1309" target="_blank">here</a>. These types of
+            scams require access to the victim's browser though, so their effectiveness is limited.</p>
+
+            <p>Either way, it's good to learn, so why not give it a go? Try to modify the content on this page!</p>
+        </section>
+
+        <section>
+            <h2>Important info about links</h2>
+
+            <p>HTML lets you link to stuff. You probably already know what links are. For learning how to hack HTML
+            links, I'd highly recommend <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">this</a>
+            YouTube tutorial.</p> <!-- trollolololo -->
+
+            <p>It is really important that you understand that HTML can link to things outside of a page's domain. This
+            means that <mark>some links may point to pages that are out of scope!</mark> For example, we are letting you
+            hack the pages for this CTF, but we aren't allowing you to hack YouTube. Now that's usually obvious when
+            you're hacking manually, but it can be easy to forget if you're using a tool or writing a script. ALWAYS
+            make sure that a page is within scope before hacking it!</p>
+
+            Some common places to find links within HTML:
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>tag</th>
+                        <th>example</th>
+                        <th>notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>link tags</td>
+                        <td><code>&lt;link href="https://example.com/style.css"&gt;</code></td>
+                        <td>not the "normal" kind of link most people think of. the user doesn't usually see these</td>
+                    </tr>
+                    <tr>
+                        <td>anchor tags</td>
+                        <td><code>&lt;a href="https://example.com/webpage.html"&gt;</code></td>
+                        <td>this one is the "normal" link</td>
+                    </tr><tr>
+                        <td>script tags</td>
+                        <td><code>&lt;script src="https://code.jquery.com/jquery-3.6.0.js"&gt;</code></td>
+                        <td>used to incorporate javascript files. may or may not be on the same domain</td>
+                    </tr>
+                    <tr>
+                        <td>images</td>
+                        <td><code>&lt;img src="https://en.meming.world/images/en/6/6e/Surprised_Pikachu.jpg"&gt;</code></td>
+                        <td>images are separate files from the HTML page</td>
+                    </tr>
+                    <tr>
+                        <td>iframes</td>
+                        <td><code>&lt;iframe src="https://www.youtube.com/embed/pfkBYHFZAt8"&gt;</code></td>
+                        <td>you can embed other webpages within a webpage. this includes YouTube videos</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+
+        <section>
+            <h2>HTML limitations</h2>
+
+            <p>HTML was fine for exchanging documents, but it had some obvious drawbacks. Most obviously, graphic design
+            was... well, lacking. The most you could really do was create tables and hide the borders, but that got very
+            annoying fairly quickly. The web needed something more.</p>
+
+            <p><i>click the button below to jump forward in time</i></p>
+            <a href="level-0b.html"><button>whoooooooooosh!!!</button></a>
+        </section>
+    </body>
+</html>
+
