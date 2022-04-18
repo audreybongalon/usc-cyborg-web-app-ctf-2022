@@ -1,4 +1,4 @@
-### web application hacking
+# web application hacking
 
 by audrey
 
@@ -32,6 +32,11 @@ suggested point value: 10 (or whatever the minimum is)
 
 for this flag, you literally just click to the last page and click a button.
 it's given away for free, to encourage people to read the intro
+
+
+
+
+--------------------------------------------------------------------------------
 
 
 
@@ -143,6 +148,11 @@ that element too
 
 
 
+--------------------------------------------------------------------------------
+
+
+
+
 ## level 2
 
 flag: `CybOrg{galaga_hax}`
@@ -157,6 +167,11 @@ there's a variety of ways to win this. you can set the enemy's HP to 0, set
 their regeneration to a negative value, freeze them in place and disable their
 ability to shoot while you kill them, make a single shot from the player cause
 over 100 HP damage, etc
+
+
+
+
+--------------------------------------------------------------------------------
 
 
 

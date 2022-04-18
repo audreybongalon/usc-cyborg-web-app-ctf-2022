@@ -88,6 +88,6 @@ function md5(d) {
 
 
 
-const flag1 = "6f89dd845a91fbb3d83fc04bd4fee27c";
-const flag2 = "c4eba422d35734f9abca6eeae61e0478";
+const flag1 = "c4eba422d35734f9abca6eeae61e0478";
+const flag2 = "6f89dd845a91fbb3d83fc04bd4fee27c";
 
